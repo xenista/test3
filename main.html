@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            margin: 0;
+        }
+        *{
+            box-sizing: border-box;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        header{
+            width: 100%;
+            background-color: red;
+            height: 150px;
+            padding: 20px;
+            display: flex;
+            align-items: flex-end;
+        }
+        nav{
+            width: 100%;
+            background-color: blue;
+            height: 50px;
+            
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            color: white;
+        }
+        article{
+            width: 60%;
+        }
+        aside{
+            width: 38%;
+            background-color: brown;
+            height: calc(100vh - 150px - 20px - 80px - 20px);
+            margin-top: 20px;
+        }
+        section{
+            height: calc((100vh - 150px - 60px - 80px - 20px) / 3);
+            background-color: black;
+            margin-top: 20px;
+        }
+        .d-flex{
+            display: flex;
+            justify-content: space-between;
+        }
+        footer{
+            height: 80px;
+            background-color: yellow;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Ссылка</li>
+                <li>Ссылка</li>
+                <li>Ссылка</li>
+                <li>Ссылка</li>
+                <li>Ссылка</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="d-flex">
+    <article>
+        <section></section>
+        <section></section>
+        <section></section>
+    </article>
+    <aside></aside>
+</div>
+    <footer></footer>
+</body>
+</html>
